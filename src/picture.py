@@ -38,8 +38,8 @@ class Picture:
     lista2 = p.img
     for x in range(len(lista2)):
       for y in range(len(lista2[x])):
-        # Se recorre entre todos los caracteres del objeto que ingresa
-        print(lista2[x][y:y+1]) 
+        if lista2[x][y:y+1] != "":
+          print(lista2[x][y:y+1])
     return Picture(None)
   
   def horizontalRepeat(self, n):
