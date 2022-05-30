@@ -33,6 +33,10 @@ class Picture:
     return Picture(newfigura)
 
   def up(self, p):
+    auxself = self.img
+    newfigura = p.img + auxself
+    """ Devuelve una nueva figura poniendo la figura recibida como argumento,
+        encima de la figura actual """
     return Picture(None)
 
   def under(self, p):
