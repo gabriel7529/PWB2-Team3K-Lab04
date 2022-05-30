@@ -38,14 +38,25 @@ class Picture:
     """ Devuelve un negativo de la imagen """
     lista = self.img
     listaN = []
-    aux = False
+    aux1 = aux2 = aux3 = aux4 = False
     x = len(lista)-32  #mitad de los string de img
-    if -1 != lista[x].find("@"): 
-      #si encuentra un "@" porque todos las piezas son de color blanco 
-      aux = True
+    if -1 != lista[x].find("="): 
+      aux1 = True
+    if -1 != lista[x].find("_"):
+      aux2 = True
+    if -1 != lista[x].find("."):
+      aux3 = True
+    if -1 != lista[x].find("@"):
+      aux4 = True  
     for i in lista:
-      if aux:
-        i = i.replace("@",self._invColor("@"))
+      if aux1:
+        i = i.replace("=",self._invColor("="))
+      if aux2:
+        i=i.replace("_",self._invColor("_"))
+      if aux3:
+        i=i.replace(".",self._invColor("."))
+      if aux4:
+        i=i.replace("@",self._invColor("@"))
       listaN.append(i)      
     return Picture(listaN)
 
