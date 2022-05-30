@@ -34,6 +34,12 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
+    lista = self.img
+    lista2 = p.img
+    for x in range(len(lista2)):
+      for y in range(len(lista2[x])):
+        # Se recorre entre todos los caracteres del objeto que ingresa
+        print(lista2[x][y:y+1]) 
     return Picture(None)
   
   def horizontalRepeat(self, n):
