@@ -36,7 +36,18 @@ class Picture:
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
-    return Picture(None)
+    lista = self.img
+    listaN = []
+    aux = False
+    x = len(lista)-32  #mitad de los string de img
+    if -1 != lista[x].find("@"): 
+      #si encuentra un "@" porque todos las piezas son de color blanco 
+      aux = True
+    for i in lista:
+      if aux:
+        i = i.replace("@",self._invColor("@"))
+      listaN.append(i)      
+    return Picture(listaN)
 
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
