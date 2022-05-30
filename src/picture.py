@@ -28,7 +28,7 @@ class Picture:
     """ Devuelve el espejo horizontal de la imagen """
     lista = self.img
     listaH = []
-    x = len(lista)
+    x = len(lista) - 1
     while x > 0:
       listaH.append(lista[x])
       x -=1
