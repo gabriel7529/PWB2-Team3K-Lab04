@@ -24,9 +24,13 @@ class Picture:
     return Picture(None)
 
   def join(self, p):
+    auxself = self.img
+    newfigura = []
+    for n in (len(self)):
+      newfigura.append(auxself[n] + p.img[n])
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(None)
+    return Picture(newfigura)
 
   def up(self, p):
     return Picture(None)
