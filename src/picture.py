@@ -38,7 +38,7 @@ class Picture:
     lista2 = p.img
     for x in range(len(lista2)):
       for y in range(len(lista2[x])):
-        if lista2[x][y:y+1] != "":
+        if lista2[x][y:y+1] != " ":
           linea = list(lista[x])
           linea[y] = lista2[x][y:y+1]
           lista[x] = "".join(linea)
