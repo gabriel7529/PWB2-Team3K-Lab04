@@ -50,7 +50,7 @@ class Picture:
     lista = self.img
     lista2 = []
     cadena = ""
-    for i in range(len(self)):
+    for i in range(len(lista)):
         for x in range(n+1):
             cadena = cadena+lista[i]
         lista2.append(cadena)
