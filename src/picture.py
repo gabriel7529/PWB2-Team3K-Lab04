@@ -26,7 +26,7 @@ class Picture:
   def join(self, p):
     auxself = self.img
     newfigura = []
-    for n in (len(self)):
+    for n in range (len(auxself)):
       newfigura.append(auxself[n] + p.img[n])
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
@@ -37,7 +37,7 @@ class Picture:
     newfigura = p.img + auxself
     """ Devuelve una nueva figura poniendo la figura recibida como argumento,
         encima de la figura actual """
-    return Picture(None)
+    return Picture(newfigura)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
@@ -50,7 +50,7 @@ class Picture:
     lista = self.img
     lista2 = []
     cadena = ""
-    for i in range(len(lista)):
+    for i in range(len(self)):
         for x in range(n+1):
             cadena = cadena+lista[i]
         lista2.append(cadena)
