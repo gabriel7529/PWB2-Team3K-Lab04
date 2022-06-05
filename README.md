@@ -41,7 +41,7 @@
   <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
   # 
      -Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
-  ```py
+```py
       def verticalMirror(self):   
         lista = self.img 
         cadena = ""
@@ -52,7 +52,7 @@
         listaV.append(cadena)
         cadena = ""  
         return Picture(listaV)
-  ```
+```
   </td></tr>
   
   <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>...</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>...</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>...</p></td></tr>
