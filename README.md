@@ -39,7 +39,8 @@
  </theader>
  <tbody>
   <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
-  # Funcion verticalMirror, devuelve el espejo vertical de la imagen 
+  # 
+     -Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
   ```py
       def verticalMirror(self):   
         lista = self.img 
