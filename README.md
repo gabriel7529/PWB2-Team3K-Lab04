@@ -39,7 +39,7 @@
  </theader>
  <tbody>
   <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>...</td></tr>
-  <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>...</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>...</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>...</p></td></tr>
+  <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>Son archivos ejecutables que contiene lineas de código compilados escritos en Python. Esto significa que después de la primera ejecución, el programa Python utilizará el archivo compilado .pyc al importar.</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p> Sirve para almacenar los archivos con extensión .pyc o .pyo; que optimiza la carga de los módulos y permite la ejecución de los programas de forma rápida. Se recomienda no comprometer el control de la fuente y debe coexistir en paz con su código fuente local.</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>Los usos que le dan al caracter "_" , son : la marcación de las cadenas traducibles para la internacionalización (i18n) o localización (l10n); otro uso que se le da es para almacenar el ultimo valor declarado, además de separar los dígitos de un números. Támbien se usa para ignorar valores específicos, pero lo más usado es para nombrar variables o funciones. Lo que representa este caracter en la programación con Python es variada, depende del contexto donde se empleé.</p></td></tr>
   <tr><td>III. CONCLUSIONES:<br>...</td></tr>
  </tbody>
 </table>
@@ -58,6 +58,7 @@
   <tr><td>REFERENCIAS Y BIBLIOGRAFÍA</td><tr>
  </theader>
  <tbody>
-  <tr><td>...<br></tr>
+  <tr><td>[1] "The Python Tutorial — Python 3.10.4 documentation". 3.10.4 Documentation. https://docs.python.org/3/tutorial/ (accedido el 28 de mayo de 2022).<br>
+     [2] "Python reference". W3Schools Online Web Tutorials. https://www.w3schools.com/python/python_reference.asp (accedido el 28 de mayo de 2022).<br></tr>
  </tbody>
 </table>
