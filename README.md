@@ -53,7 +53,44 @@
           cadena = ""  
           return Picture(listaV)	    	
   </pre><hr>
-  
+   - Funcion horizontalMirror, devuelve el espejo horizontal de la imagen
+  <pre>
+  def horizontalMirror(self):
+    lista = self.img
+    listaH = []
+    x = len(lista) - 1
+    while x > 0:
+      listaH.append(lista[x])
+      x -=1
+    return Picture(listaH)
+  </pre><hr>
+  - Funcion negative, devuelve un negativo de la imagen
+  <pre>
+    def negative(self):   
+        lista = self.img
+        listaN = []
+        aux1 = aux2 = aux3 = aux4 = False
+        x = len(lista)-32  #mitad de los string de img
+        if -1 != lista[x].find("="): 
+            aux1 = True
+        if -1 != lista[x].find("_"):
+            aux2 = True
+        if -1 != lista[x].find("."):
+            aux3 = True
+        if -1 != lista[x].find("@"):
+            aux4 = True  
+        for i in lista:
+            if aux1:
+                i = i.replace("=",self._invColor("="))
+            if aux2:
+                i=i.replace("_",self._invColor("_"))
+            if aux3:
+                i=i.replace(".",self._invColor("."))
+            if aux4:
+                i=i.replace("@",self._invColor("@"))
+            listaN.append(i)      
+        return Picture(listaN)
+  </pre><hr>
   - Para el método Under se utilizaron dos bucles que recorren todo la figura actual tanto en fila como en columnas, luego evalua buscando un espacio vacio y remplazandolo por la nueva figura caracter por caracter. Finalmente retorna la lista modificada<br>
   <pre>
    def under(self, p):
@@ -89,22 +126,6 @@
         lista2 = lista2+lista
     return Picture(lista2)
   </pre><hr>
-   - El método join(), lo que realiza es la concatenación de las varibles que se dan en los parámetros, a traves de un ciclo for:
-  <pre>
-  def join(self, p):
-    auxself = self.img
-    newfigura = []
-    for n in range (len(auxself)):
-      newfigura.append(auxself[n] + p.img[n])
-    return Picture(newfigura)
-      </pre><hr>
-   - En cuanto el método up, este simplemente hace una sola concatenación de las variables que se dan en los parametros:
-   <pre>
-  def up(self, p):
-    auxself = self.img
-    newfigura = p.img + auxself
-    return Picture(newfigura)
-  </pre>
   </td></tr>
   
   <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>Sirve para almacenar los archivos con extensión .pyc o .pyo; que optimiza la carga de los módulos y permite la ejecución de los programas de forma rápida. Se recomienda no comprometer el control de la fuente y debe coexistir en paz con su código fuente local.</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>Son archivos ejecutables que contiene lineas de código compilados escritos en Python. Esto significa que después de la primera ejecución, el programa Python utilizará el archivo compilado .pyc al importar.</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>Los usos que le dan al caracter "_" , son : la marcación de las cadenas traducibles para la internacionalización (i18n) o localización (l10n); otro uso que se le da es para almacenar el ultimo valor declarado, además de separar los dígitos de un números. Támbien se usa para ignorar valores específicos, pero lo más usado es para nombrar variables o funciones. Lo que representa este caracter en la programación con Python es variada, depende del contexto donde se empleé.</p></td></tr>
