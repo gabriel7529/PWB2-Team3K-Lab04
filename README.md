@@ -55,7 +55,7 @@
   ```
   </td></tr>
      
-  <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br>...<strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>...<strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong>...</td></tr>
+  <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>...</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>...</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>...</p></td></tr>
   <tr><td>III. CONCLUSIONES:<br>Los ejercicios consistian en completar los métodos de la la clase <em>picture</em> y con ello realizar los ejercicios del a-g, esto implicó indagar acerca del lenguaje python y junto con los conocimientos de la programación orientada a objetos se pudo realizar los ejercicios propuestos, para la implementación de los métodos se usaron bucles, condicionales y metodos de String, en cambio para la realización de los ejercicos se utilizaron objetos junto con los metodos previamente creados.</td></tr>
  </tbody>
 </table>
