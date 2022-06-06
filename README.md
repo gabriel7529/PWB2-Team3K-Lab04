@@ -205,7 +205,8 @@
         vertical = segmento2.verticalRepeat(3)
         draw(vertical)
     </pre><hr>
-   - Ejercicio 2g
+      
+ - Ejercicio 2g
        -Basandonos en el patrón del ejercicio 1f se repite en vertical y se encima las filas de fichas tanto de negro como de blanco 
     <pre>
         bloque0 = rock.join(knight).join(bishop)
