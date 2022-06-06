@@ -158,37 +158,6 @@
 
         draw(fil1.up(fil2))
     </pre><hr>
-<<<<<<< HEAD
-  - Ejercicio 1f
-      - Se crea el patrón blanco, gris, se invierte su color, se repite ambos el largo suficiente y se encima uno al otro
-    <pre>
-        segmento0 = square.join(square.negative())
-        segmento1 = square.negative().join(square)
-        horizontal0 = segmento1.horizontalRepeat(3)
-        horizontal1 = segmento2.horizontalRepeat(3)
-        segmento2 = horizontal1.up(horizontal2)
-        vertical = segmento2.verticalRepeat(3)
-        draw(vertical)
-    </pre><hr>
-   - Ejercicio 1g
-       -Basandonos en el patrón del ejercicio 1f se repite en vertical y se encima las filas de fichas tanto de negro como de blanco 
-    <pre>
-        bloque0 = rock.join(knight).join(bishop)
-        bloque1 = bloque1.verticalMirror()
-        bloque2 = bloque1.join(queen).join(king).join(bloque2)
-        peones = pawn.horizontalRepeat(6)
-        piezazBlancas = bloque2.up(peones)
-        segmento0 = square.join(square.negative())
-        segmento1 = square.negative().join(square)
-        horizontal0 = segmento1.horizontalRepeat(3)
-        horizontal1 = segmento2.horizontalRepeat(3)
-        segmento2 = horizontal2.up(horizontal1)
-        fondo = segmento2.verticalRepeat(2)
-        union0 = segmento3.under(piezazBlancas)
-        union1 = union1.up(fondo)
-        draw(piezazBlancas)
-    </pre>
-=======
    - Ejercicio 2c
         - Se invoca a la función de la clase Picture, horizontalRepeat, donde se pone la ficha y la cantidad de repeticiones extras que tendrá.
       <pre>
@@ -208,8 +177,36 @@
       figura = Picture.join(square.negative(), square)
       figuraT = Picture.horizontalRepeat(figura, 3)
       draw(figuraT)
-      </pre>
->>>>>>> 02c29626bd91d3dfbefda6f4ca6a71843d4d1e1d
+      </pre><hr>
+- Ejercicio 2f
+      - Se crea el patrón blanco, gris, se invierte su color, se repite ambos el largo suficiente y se encima uno al otro
+    <pre>
+        segmento0 = square.join(square.negative())
+        segmento1 = square.negative().join(square)
+        horizontal0 = segmento1.horizontalRepeat(3)
+        horizontal1 = segmento2.horizontalRepeat(3)
+        segmento2 = horizontal1.up(horizontal2)
+        vertical = segmento2.verticalRepeat(3)
+        draw(vertical)
+    </pre><hr>
+   - Ejercicio 2g
+       -Basandonos en el patrón del ejercicio 1f se repite en vertical y se encima las filas de fichas tanto de negro como de blanco 
+    <pre>
+        bloque0 = rock.join(knight).join(bishop)
+        bloque1 = bloque1.verticalMirror()
+        bloque2 = bloque1.join(queen).join(king).join(bloque2)
+        peones = pawn.horizontalRepeat(6)
+        piezazBlancas = bloque2.up(peones)
+        segmento0 = square.join(square.negative())
+        segmento1 = square.negative().join(square)
+        horizontal0 = segmento1.horizontalRepeat(3)
+        horizontal1 = segmento2.horizontalRepeat(3)
+        segmento2 = horizontal2.up(horizontal1)
+        fondo = segmento2.verticalRepeat(2)
+        union0 = segmento3.under(piezazBlancas)
+        union1 = union1.up(fondo)
+        draw(piezazBlancas)
+    </pre>
   </td></tr>
   
   <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>Sirve para almacenar los archivos con extensión .pyc o .pyo; que optimiza la carga de los módulos y permite la ejecución de los programas de forma rápida. Se recomienda no comprometer el control de la fuente y debe coexistir en paz con su código fuente local.</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>Son archivos ejecutables que contiene lineas de código compilados escritos en Python. Esto significa que después de la primera ejecución, el programa Python utilizará el archivo compilado .pyc al importar.</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>Los usos que le dan al caracter "_" , son : la marcación de las cadenas traducibles para la internacionalización (i18n) o localización (l10n); otro uso que se le da es para almacenar el ultimo valor declarado, además de separar los dígitos de un números. Támbien se usa para ignorar valores específicos, pero lo más usado es para nombrar variables o funciones. Lo que representa este caracter en la programación con Python es variada, depende del contexto donde se empleé.</p></td></tr>
