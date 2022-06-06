@@ -38,9 +38,24 @@
   <tr><th>SOLUCIÓN Y RESULTADOS</th></tr>
  </theader>
  <tbody>
-  <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>...</td></tr>
-  <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>Son archivos ejecutables que contiene lineas de código compilados escritos en Python. Esto significa que después de la primera ejecución, el programa Python utilizará el archivo compilado .pyc al importar.</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p> Sirve para almacenar los archivos con extensión .pyc o .pyo; que optimiza la carga de los módulos y permite la ejecución de los programas de forma rápida. Se recomienda no comprometer el control de la fuente y debe coexistir en paz con su código fuente local.</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>Los usos que le dan al caracter "_" , son : la marcación de las cadenas traducibles para la internacionalización (i18n) o localización (l10n); otro uso que se le da es para almacenar el ultimo valor declarado, además de separar los dígitos de un números. Támbien se usa para ignorar valores específicos, pero lo más usado es para nombrar variables o funciones. Lo que representa este caracter en la programación con Python es variada, depende del contexto donde se empleé.</p></td></tr>
-  <tr><td>III. CONCLUSIONES:<br>...</td></tr>
+  <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
+      # 
+      -Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
+      ```sh
+        def verticalMirror(self):   
+            lista = self.img 
+            cadena = ""
+            listaV = []
+            for i in lista:
+                for letra in i:
+                    cadena = letra + cadena
+            listaV.append(cadena)
+            cadena = ""  
+            return Picture(listaV)	    	
+  ```
+      </td></tr>
+  <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br>...<strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>...<strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong>...</td></tr>
+  <tr><td>III. CONCLUSIONES:<br>Los ejercicios consistian en completar los métodos de la la clase <em>picture</em> y con ello realizar los ejercicios del a-g, esto implicó indagar acerca del lenguaje python y junto con los conocimientos de la programación orientada a objetos se pudo realizar los ejercicios propuestos, para la implementación de los métodos se usaron bucles, condicionales y metodos de String, en cambio para la realización de los ejercicos se utilizaron objetos junto con los metodos previamente creados.</td></tr>
  </tbody>
 </table>
 
