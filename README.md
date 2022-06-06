@@ -53,6 +53,41 @@
             cadena = ""  
             return Picture(listaV)	    	
   ```
+  <br>- Para el método Under se utilizaron dos bucles que recorren todo la figura actual tanto en fila como en columnas, luego evalua buscando un espacio vacio y remplazandolo por la nueva figura caracter por caracter. Finalmente retorna la lista modificada<br>
+  <pre>
+   def under(self, p):
+      lista = self.img
+      lista2 = p.img
+      for x in range(len(lista2)):
+        for y in range(len(lista2[x])):
+          if lista2[x][y:y+1] != " ":
+            linea = list(lista[x])
+            linea[y] = lista2[x][y:y+1]
+            lista[x] = "".join(linea)
+      return Picture(lista)
+  </pre>
+  - Métodos horizontalRepeat y verticalRepeat en la primera se añadio a cada elemento de la lista(string) la misma cadena las veces que indicaba n, esto se guarda en otro arreglo y se retorna.
+  <pre>
+   def horizontalRepeat(self, n):
+     lista = self.img
+     lista2 = []
+     cadena = ""
+     for i in range(len(lista)):
+         for x in range(n+1):
+             cadena = cadena+lista[i]
+         lista2.append(cadena)
+         cadena = ""
+     return Picture(lista2)
+  </pre> 
+  Para el segundo, se añade nuevos elementos(String) al final de la lista
+  <pre>
+  def verticalRepeat(self, n):
+    lista = self.img
+    lista2 = []
+    for x in range(n+1):
+        lista2 = lista2+lista
+    return Picture(lista2)
+  </pre>
   </td></tr>
   
   <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>Sirve para almacenar los archivos con extensión .pyc o .pyo; que optimiza la carga de los módulos y permite la ejecución de los programas de forma rápida. Se recomienda no comprometer el control de la fuente y debe coexistir en paz con su código fuente local.</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>Son archivos ejecutables que contiene lineas de código compilados escritos en Python. Esto significa que después de la primera ejecución, el programa Python utilizará el archivo compilado .pyc al importar.</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>Los usos que le dan al caracter "_" , son : la marcación de las cadenas traducibles para la internacionalización (i18n) o localización (l10n); otro uso que se le da es para almacenar el ultimo valor declarado, además de separar los dígitos de un números. Támbien se usa para ignorar valores específicos, pero lo más usado es para nombrar variables o funciones. Lo que representa este caracter en la programación con Python es variada, depende del contexto donde se empleé.</p></td></tr>
