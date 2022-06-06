@@ -129,6 +129,22 @@
         lista2 = lista2+lista
     return Picture(lista2)
   </pre><hr>
+   - El método join(), lo que realiza es la concatenación de las varibles que se dan en los parámetros, a traves de un ciclo for:
+  <pre>
+  def join(self, p):
+    auxself = self.img
+    newfigura = []
+    for n in range (len(auxself)):
+      newfigura.append(auxself[n] + p.img[n])
+    return Picture(newfigura)
+      </pre><hr>
+   - En cuanto el método up(), este simplemente hace una sola concatenación de las variables que se dan en los parametros:
+   <pre>
+  def up(self, p):
+    auxself = self.img
+    newfigura = p.img + auxself
+    return Picture(newfigura)
+  </pre><hr>
   <h4>- DIBUJO DE FIGURAS</h4>
       
    - Para estos ejercicios se ha importado de la clase chessPicture e interpreter
