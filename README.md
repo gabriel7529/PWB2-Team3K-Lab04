@@ -74,6 +74,7 @@
   <tr><td>REFERENCIAS Y BIBLIOGRAFÍA</td><tr>
  </theader>
  <tbody>
-  <tr><td>...<br></tr>
+  <tr><td>[1] "The Python Tutorial — Python 3.10.4 documentation". 3.10.4 Documentation. https://docs.python.org/3/tutorial/ (accedido el 28 de mayo de 2022).<br>
+     [2] "Python reference". W3Schools Online Web Tutorials. https://www.w3schools.com/python/python_reference.asp (accedido el 28 de mayo de 2022).<br></tr>
  </tbody>
 </table>
