@@ -127,11 +127,12 @@
     return Picture(lista2)
   </pre><hr>
   <h4>- DIBUJO DE FIGURAS</h4>
-      <p>Para estos ejercicios se ha importado de la clase chessPicture e interpreter</p>
-      <pre>
-         from chessPictures import *
-         from interpreter import draw
-      </pre>
+      
+   - Para estos ejercicios se ha importado de la clase chessPicture e interpreter
+    <pre>
+       from chessPictures import *
+       from interpreter import draw
+    </pre>
       
   - Ejercicio 2a
      <pre>       
