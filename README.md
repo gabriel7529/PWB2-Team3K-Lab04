@@ -158,21 +158,21 @@
 
         draw(fil1.up(fil2))
     </pre><hr>
-     - Ejercicio 2c
-         - Se invoca a la función de la clase Picture, horizontalRepeat, donde se pone la ficha y la cantidad de repeticiones extras que tendrá.
+   - Ejercicio 2c
+        - Se invoca a la función de la clase Picture, horizontalRepeat, donde se pone la ficha y la cantidad de repeticiones extras que tendrá.
       <pre>
       figura = Picture.horizontalRepeat(queen,3)
       draw(figura)
       </pre><hr>
    - Ejercicio 2d
-      - Se invoca al método join para que ponga al lado el square del square de color oscuro para luego en figuraT; hacer un horizontalRepeat. 
+      - Se invoca al método join para que ponga al lado el square del square de color oscuro para luego en figuraT; hacer un horizontalRepeat de la variable figura. 
       <pre>
       figura = Picture.join(square,square.negative())
       figuraT = Picture.horizontalRepeat(figura,3)
       draw(figuraT)
       </pre><hr>
    - Ejercicio 2e
-      - Se realiza el mismo procedimiento del ejercicio anterior, pero con los square de distinto orden.
+      - Se realiza el mismo procedimiento del ejercicio anterior, pero con los square en distinto orden.
       <pre>
       figura = Picture.join(square.negative(), square)
       figuraT = Picture.horizontalRepeat(figura, 3)
