@@ -158,6 +158,26 @@
 
         draw(fil1.up(fil2))
     </pre><hr>
+     - Ejercicio 2c
+         - Se invoca a la función de la clase Picture, horizontalRepeat, donde se pone la ficha y la cantidad de repeticiones extras que tendrá.
+      <pre>
+      figura = Picture.horizontalRepeat(queen,3)
+      draw(figura)
+      </pre><hr>
+   - Ejercicio 2d
+      - Se invoca al método join para que ponga al lado el square del square de color oscuro para luego en figuraT; hacer un horizontalRepeat. 
+      <pre>
+      figura = Picture.join(square,square.negative())
+      figuraT = Picture.horizontalRepeat(figura,3)
+      draw(figuraT)
+      </pre><hr>
+   - Ejercicio 2e
+      - Se realiza el mismo procedimiento del ejercicio anterior, pero con los square de distinto orden.
+      <pre>
+      figura = Picture.join(square.negative(), square)
+      figuraT = Picture.horizontalRepeat(figura, 3)
+      draw(figuraT)
+      </pre>
   </td></tr>
   
   <tr><td>II. SOLUCIÓN DEL CUESTIONARIO:<br><strong><em>1. ¿Qué son los archivos *.pyc?</em></strong><br><p>Sirve para almacenar los archivos con extensión .pyc o .pyo; que optimiza la carga de los módulos y permite la ejecución de los programas de forma rápida. Se recomienda no comprometer el control de la fuente y debe coexistir en paz con su código fuente local.</p><strong><em>2. ¿Para qué sirve el directorio pycache?</em></strong><p>Son archivos ejecutables que contiene lineas de código compilados escritos en Python. Esto significa que después de la primera ejecución, el programa Python utilizará el archivo compilado .pyc al importar.</p><strong><em> 3. ¿Cuáles son los usos y lo que representa el subguión en Python?</em></strong><p>Los usos que le dan al caracter "_" , son : la marcación de las cadenas traducibles para la internacionalización (i18n) o localización (l10n); otro uso que se le da es para almacenar el ultimo valor declarado, además de separar los dígitos de un números. Támbien se usa para ignorar valores específicos, pero lo más usado es para nombrar variables o funciones. Lo que representa este caracter en la programación con Python es variada, depende del contexto donde se empleé.</p></td></tr>
