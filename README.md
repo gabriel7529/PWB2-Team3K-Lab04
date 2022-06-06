@@ -41,6 +41,7 @@
   <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
   
   - Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
+      - Mediante un bucle for anidado se recorre la lista, en el bucle for interior se le suma el valor de la lista en sus distintas posiciones a la variable "cadena". Al terminar, en el bucle for exterior se añade a la nueva lista y se vacia el valor de la variable "cadena".Retornando la nueva lista.
  <pre>
       def verticalMirror(self):   
           lista = self.img 
@@ -49,11 +50,12 @@
           for i in lista:
              for letra in i:
                  cadena = letra + cadena
-          listaV.append(cadena)
-          cadena = ""  
+             listaV.append(cadena)
+             cadena = ""  
           return Picture(listaV)	    	
   </pre><hr>
    - Funcion horizontalMirror, devuelve el espejo horizontal de la imagen
+      - Se hace uso de un ciclo while, se hace uso de la variable "x" como indice para que se almacene en una nueva lista los valores de lista inicial. Al terminar se retorna la nueva lista.
   <pre>
   def horizontalMirror(self):
     lista = self.img
@@ -65,6 +67,7 @@
     return Picture(listaH)
   </pre><hr>
   - Funcion negative, devuelve un negativo de la imagen
+      - Primero los condicionales sirven para cambiar el valor de los auxiliares cuando se cumpla la condicion, luego en un bucle for el cual contiene condicionales que permite reemplazar los valores de lista para cambiar de color segun sea el tipo de caracter.
   <pre>
     def negative(self):   
         lista = self.img
@@ -135,6 +138,7 @@
     </pre>
       
   - Ejercicio 2a
+      - Aqui se hace uso de los metodos negative, join y up
      <pre>       
         knight_black = knight.negative()
         fil1 = knight_black.join(knight)
@@ -143,6 +147,7 @@
      </pre><hr>
       
   - Ejercicio 2b
+      - Aqui se hace uso de los metodos negative,verticalMirror,join y up
     <pre>
         knight_black = knight.negative()
         inv1V = knight.verticalMirror()
