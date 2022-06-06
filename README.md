@@ -39,19 +39,18 @@
  </theader>
  <tbody>
   <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
-  # 
-      -Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
-      <pre>
-        def verticalMirror(self):   
-            lista = self.img 
-            cadena = ""
-            listaV = []
-            for i in lista:
-                for letra in i:
-                    cadena = letra + cadena
-            listaV.append(cadena)
-            cadena = ""  
-            return Picture(listaV)	    	
+-Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
+ <pre>
+      def verticalMirror(self):   
+          lista = self.img 
+          cadena = ""
+          listaV = []
+          for i in lista:
+             for letra in i:
+                 cadena = letra + cadena
+          listaV.append(cadena)
+          cadena = ""  
+          return Picture(listaV)	    	
   </pre>
   <br>- Para el método Under se utilizaron dos bucles que recorren todo la figura actual tanto en fila como en columnas, luego evalua buscando un espacio vacio y remplazandolo por la nueva figura caracter por caracter. Finalmente retorna la lista modificada<br>
   <pre>
