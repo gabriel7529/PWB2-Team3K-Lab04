@@ -34,7 +34,15 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    return Picture(None)
+    lista = self.img
+    lista2 = p.img
+    for x in range(len(lista2)):
+      for y in range(len(lista2[x])):
+        if lista2[x][y:y+1] != " ":
+          linea = list(lista[x])
+          linea[y] = lista2[x][y:y+1]
+          lista[x] = "".join(linea)
+    return Picture(lista)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
