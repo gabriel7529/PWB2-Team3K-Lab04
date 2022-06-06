@@ -41,7 +41,7 @@
   <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
   # 
       -Funcion verticalMirror, devuelve el espejo vertical de la imagen<br>
-      ```py
+      ```sh
         def verticalMirror(self):   
             lista = self.img 
             cadena = ""
